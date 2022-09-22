@@ -1,10 +1,18 @@
 def distinct_pair_sum(arr, k)
 
-  # 1) Initialize count as 0
-  # 2) Sort all numbers in increasing order.
-  # 3) Remove duplicates from array.
+  matched_pairs = {}
 
+  (0...(arr.length)).each do |i|
+    next_value = arr[i + 1]
 
+    if next_value + arr[i] == k && !matched_pairs.include?(next_value) && !matched_pairs.include?(arr[i])
+      p next_value
+      matched_pairs[arr[i]] = [arr[i], next_value]
+      p matched_pairs
+    end
+  end
+    matched_pairs.values
+end
 
 end
 
