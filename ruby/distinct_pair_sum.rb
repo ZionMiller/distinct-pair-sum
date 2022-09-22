@@ -1,5 +1,11 @@
 def distinct_pair_sum(arr, k)
-  # type your code in here
+
+  # 1) Initialize count as 0
+  # 2) Sort all numbers in increasing order.
+  # 3) Remove duplicates from array.
+
+
+
 end
 
 if __FILE__ == $PROGRAM_NAME
